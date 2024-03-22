@@ -23,6 +23,10 @@ HTML List
 
 [ ] Locate logos for each team (Wikipedia is a good source) and use the URLs to place each element next to the team name in the list above. Use width and/or height attributes to size it to thumbnail size.
 
+https://en.wikipedia.org/wiki/Denver_Broncos
+
+https://en.wikipedia.org/wiki/New_England_Patriots
+
 [ ] Add a new section with the heading "FORM". Under it create a form element. Inside of the form add:
 
 [ ] Give the form input text fields for firstname and lastname.
