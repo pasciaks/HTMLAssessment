@@ -1,15 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sheldon Pasciak</title>
 </head>
+<header>
+    <nav></nav>
+</header>
+
 <body>
 
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Denver_Broncos_logo.svg/100px-Denver_Broncos_logo.svg.png" alt="Denver Broncos Logo">
+    <main>
 
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/New_England_Patriots_logo.svg/200px-New_England_Patriots_logo.svg.png" alt="New England Patriots Logo">
-    
+        <section>
+            <h2>TEXT</h2>
+
+            <p>
+                <strong>Lorem</strong> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur.
+            </p>
+
+            <p>
+            <blockquote cite="https://pasciak.com">
+                <em><strong>Lorem</strong> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum
+                    dolore eu fugiat nulla pariatur.</em>
+            </blockquote>
+            </p>
+
+            <p>
+                <strong>Lorem</strong> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur.
+            </p>
+
+        </section>
+
+        <section id="table">
+            <h2>TABLE</h2>
+
+            <table border="1">
+
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td colspan="4">Scores by quarter</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Team Name</td>
+                        <td colspan="2">First Half</td>
+                        <td colspan="2">Second Half</td>
+                        <td rowspan="2">Final</td>
+                    </tr>
+                    <tr>
+                        <td>Q1</td>
+                        <td>Q2</td>
+                        <td>Q3</td>
+                        <td>Q4</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Denver</td>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>Chicago</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>7</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>14</td>
+                        <td>37</td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <section>
+            <h2>LIST</h2>
+
+            <ul>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Denver_Broncos_logo.svg/100px-Denver_Broncos_logo.svg.png"
+                        alt="Denver Broncos Logo" width="50">
+                    <br>
+                    <a href="https://www.denverbroncos.com/" target="_blank">Denver Broncos</a>
+                    <ul>
+                        <li>Coach: Gary Kubiak</li>
+                        <li>QB:</li>
+
+                        <ol>
+                            <li>Brock Osweiler</li>
+                            <li>Trevor Siemian</li>
+                            <li>Peyton Manning (injured)</li>
+                        </ol>
+                    </ul>
+                </li>
+
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Chicago_Bears_logo_primary.svg/200px-Chicago_Bears_logo_primary.svg.png"
+                        alt="Chicago Logo" width="50">
+                    <br>
+                    <a href="https://www.chicagobears.com/" target="_blank">Chicago Bears</a>
+                    <ul>
+                        <li>Coach: Gary Kubiak</li>
+                        <li>QB:</li>
+
+                        <ol>
+                            <li>Jay Cutler</li>
+                            <li>David Foles</li>
+                        </ol>
+                    </ul>
+                </li>
+
+            </ul>
+        </section>
+
+        <section>
+            <h2>FORM</h2>
+
+            <form>
+
+                <label for="firstName">First:</label>
+                <input type="text" id="firstName" name="firstName" value="Bob">
+                <label for="lastName">Last:</label>
+                <input type="text" id="lastName" name="lastName" value="Dobbs">
+
+                <br>
+
+                <label for="favoriteSport">Favorite Sport:</label><br>
+                <select name="favoriteSport" id="favoriteSport">
+                    <option selected value="soccer">Soccer</option>
+                    <option value="football">Football</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="baseball">Baseball</option>
+                </select>
+
+                <br>
+
+                <label>I have: </label>
+                <input type="checkbox" id="attended" name="attended" value="attended">
+                <label for="attended">Attended</label>
+                <input type="checkbox" id="played" name="played" value="played">
+                <label for="played">Played</label>
+                <input type="checkbox" id="coached" name="coached" value="coached">
+                <label for="coached">Coached</label>
+                <input type="checkbox" id="betOn" name="betOn" value="betOn">
+                <label for="betOn">Bet on</label><br>
+                <label>this sport.</label>
+
+                <br>
+
+                <label>For this sport I prefer the:</label>
+                <input type="radio" id="amateur" name="league" value="amateur">
+                <label for="amateur">Amateur</label>
+                <input type="radio" id="college" name="league" value="college">
+                <label for="college">College</label>
+                <input type="radio" id="professional" name="league" value="professional">
+                <label for="professional">Professional</label>
+
+                <br>
+
+                <input type="submit" value="Submit Query">
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <br>
+
+    <footer>
+        <strong>Project: </strong><a
+            href="https://github.com/SkillDistillery/SD43/blob/main/web101/HTMLAssessment/labs.md" target="_blank">HTML
+            Assessment</a>
+    </footer>
 </body>
+
 </html>
