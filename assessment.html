@@ -1,11 +1,15 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
     <title>Sheldon Pasciak</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <header>
     <nav></nav>
 </header>
@@ -14,7 +18,8 @@
 
     <main>
 
-        <section>
+        <section id="text">
+
             <h2>TEXT</h2>
 
             <p>
@@ -50,6 +55,7 @@
         </section>
 
         <section id="table">
+
             <h2>TABLE</h2>
 
             <table border="1">
@@ -98,7 +104,6 @@
                         <td>7</td>
                         <td>14</td>
                         <td>37</td>
-
                     </tr>
                 </tbody>
 
@@ -106,7 +111,7 @@
 
         </section>
 
-        <section>
+        <section id="list">
             <h2>LIST</h2>
 
             <ul>
@@ -146,13 +151,15 @@
             </ul>
         </section>
 
-        <section>
+        <section id="form">
+
             <h2>FORM</h2>
 
-            <form>
+            <form method="POST" action="https://en9lq7dy4nwcl.x.pipedream.net/">
 
                 <label for="firstName">First:</label>
                 <input type="text" id="firstName" name="firstName" value="Bob">
+
                 <label for="lastName">Last:</label>
                 <input type="text" id="lastName" name="lastName" value="Dobbs">
 
@@ -199,13 +206,25 @@
 
     </main>
 
-    <br>
+    <hr>
 
     <footer>
-        <strong>Project: </strong><a
-            href="https://github.com/SkillDistillery/SD43/blob/main/web101/HTMLAssessment/labs.md" target="_blank">HTML
-            Assessment</a>
+        <section id="footer">
+            <strong>Previous Form Submissions: </strong><a href="https://public.requestbin.com/r/en9lq7dy4nwcl/"
+                target="_blank">View Past POST Results</a>
+
+                <br>
+
+
+            <strong>Project: </strong><a href="https://github.com/pasciaks/HTMLAssessment" target="_blank">HTML
+                Assessment</a>
+
+                <br>
+        </section>
     </footer>
+
+    <script defer src="./js/script.js"></script>
+
 </body>
 
 </html>
