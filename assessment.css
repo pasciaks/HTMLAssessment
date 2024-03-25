@@ -143,7 +143,11 @@ This is a graded project. You must push your solution to Github.
 
 */
 
-#teamRoster > li > ul > li:first-child {
+/* #teamRoster > li > ul > li:first-child {
+    font-weight: bold;
+} */
+
+ol li:first-child {
     font-weight: bold;
 }
 
