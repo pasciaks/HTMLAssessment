@@ -1,0 +1,164 @@
+/* 
+
+User Story #1
+Your headers should be changed to your 
+favorite color and set to a sans-serif font. 
+(Notice they are not all the same tag!)
+
+*/
+
+/* h2,h3,h4,h5 {
+    color: #FF0000;
+    font-family: sans-serif;
+} */
+
+.subjectHeader {
+    color: #FF0000;
+    font-family: sans-serif;
+    border: 1px dashed purple;
+}
+
+/*
+
+User Story #2
+Your table should have bold/colored table headers,
+ as well as a table border. 
+ Content should be centered in their respective blocks.
+
+
+*/
+
+table {
+    border: 1px solid blue;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 0 15px;
+    border: 1px dotted gray;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+
+    border: 1px dashed red;
+}
+
+td {
+    text-align: center;
+
+    border: 1px dashed red;
+}
+
+/*
+User Story #3
+Your list should have square list bullets.
+
+*/
+
+ul {
+    list-style-type: square;
+}
+
+body > ul {
+    list-style-type: none;
+}
+
+/*
+User Story #4
+When the user hovers over a hyperlink the 
+background color of the hyperlink should
+change and it should not be underlined.
+*/
+
+a:hover {
+    text-decoration: none;
+    background-color: #FF0000;
+}
+
+/*
+User Story #5
+Set the background color of the block quote text 
+(second paragraph) to a dark color and
+ the font color to a contrasting light color.
+*/
+
+blockquote {
+    background-color: darkblue;
+    color: lightcyan;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+
+
+/*
+User Story #6
+Make each team's image the background image 
+for the list. Hint Check out the element > element 
+and :first-child / :last-child selectors. 
+Remove the image from above the team's list.
+*/
+
+
+#teamRoster > li:first-child > ul {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    padding-left: 50px; 
+}
+
+#teamRoster > li:last-child > ul {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    padding-left: 50px; 
+    
+}
+
+[alt="Bears Logo"] {
+    display: none;
+}
+
+[alt="Broncos Logo"] {
+    display: none;
+}
+
+/*
+User Story #7
+The checkbox list should not be bulleted.
+*/
+
+#checkbox-grid {
+    list-style-type: none;
+}
+
+/*
+Stretch Goals
+Have each team's primary quarterback display in bold.
+
+Use CSS to give the table rows alternating background colors.
+
+Solid background images can make foreground text hard to read; find a way to have each team's image display behind its roster, but reduced intensity. Do not edit the image itself.
+
+Grading
+This is a graded project. You must push your solution to Github. 
+
+*/
+
+#teamRoster > li > ul > li:first-child {
+    font-weight: bold;
+}
+
+ul > li > ul > li > strong {
+    font-weight: bold;
+}
+
+table tr:nth-child(odd) {
+    background-color: black;
+}
+
+table tr:nth-child(odd) {
+    background-color: darkgray;
+}
