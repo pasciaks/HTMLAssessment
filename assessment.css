@@ -95,7 +95,7 @@ Remove the image from above the team's list.
 */
 
 
-#teamRoster > li:first-child > ul {
+#teamRoster > li:first-child  {
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg');
     background-repeat: no-repeat;
     background-position: left center;
@@ -104,7 +104,7 @@ Remove the image from above the team's list.
     padding-left: 50px; 
 }
 
-#teamRoster > li:last-child > ul {
+#teamRoster > li:last-child  {
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg');
     background-repeat: no-repeat;
     background-position: left center;
