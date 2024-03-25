@@ -55,7 +55,7 @@ ul {
     list-style-type: square;
 }
 
-body > ul {
+body>ul {
     list-style-type: none;
 }
 
@@ -69,7 +69,7 @@ change and it should not be underlined.
 a:hover {
     text-decoration: none;
     background-color: #FF0000;
-    color:white;
+    color: white;
 }
 
 /*
@@ -95,31 +95,41 @@ Remove the image from above the team's list.
 */
 
 
-/* #teamRoster > li:first-child  {
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg');
+#teamRoster>li:first-child {
+    /* background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg'); */
+
+    background-blend-mode: color;
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg');
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
-    padding-left: 50px; 
-} */
+    padding-left: 50px;
+}
 
-/* #teamRoster > li:last-child  {
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg');
+#teamRoster>li:last-child {
+    /* background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg'); */
+
+    background-blend-mode: color;
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg');
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
-    padding-left: 50px; 
-} */
+    padding-left: 50px;
+}
 
-/* [alt="Bears Logo"] {
+[alt="Bears Logo"] {
     display: none;
-} */
+}
 
-/* [alt="Broncos Logo"] {
+[alt="Broncos Logo"] {
     display: none;
-} */
+}
 
-#teamRoster > li{
+/* #teamRoster > li{
     position: relative;
     color: rgb(32, 76, 126);
 
@@ -138,7 +148,7 @@ Remove the image from above the team's list.
         left: 0;
 
     }
-}
+} */
 
 /*
 User Story #7
@@ -170,7 +180,7 @@ ol li:first-child {
     font-weight: bold;
 }
 
-ul > li > ul > li > strong {
+ul>li>ul>li>strong {
     font-weight: bold;
 }
 
