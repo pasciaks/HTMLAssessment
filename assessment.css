@@ -1,10 +1,9 @@
 /* 
-
 User Story #1
+
 Your headers should be changed to your 
 favorite color and set to a sans-serif font. 
 (Notice they are not all the same tag!)
-
 */
 
 /* h2,h3,h4,h5 {
@@ -19,13 +18,11 @@ favorite color and set to a sans-serif font.
 }
 
 /*
-
 User Story #2
 Your table should have bold/colored table headers,
  as well as a table border. 
+
  Content should be centered in their respective blocks.
-
-
 */
 
 table {
@@ -39,7 +36,7 @@ th {
     font-weight: bold;
     color: green;
     text-align: center;
-
+    font-weight: bold;
     border: 1px dashed red;
 }
 
@@ -52,7 +49,6 @@ td {
 /*
 User Story #3
 Your list should have square list bullets.
-
 */
 
 ul {
@@ -73,6 +69,7 @@ change and it should not be underlined.
 a:hover {
     text-decoration: none;
     background-color: #FF0000;
+    color:white;
 }
 
 /*
@@ -89,8 +86,6 @@ blockquote {
     border-radius: 15px;
 }
 
-
-
 /*
 User Story #6
 Make each team's image the background image 
@@ -101,20 +96,21 @@ Remove the image from above the team's list.
 
 
 #teamRoster > li:first-child > ul {
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg');
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg');
     background-repeat: no-repeat;
     background-position: left center;
+    /* background-size: stretch; */
     background-size: contain;
     padding-left: 50px; 
 }
 
 #teamRoster > li:last-child > ul {
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg');
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg');
     background-repeat: no-repeat;
     background-position: left center;
+    /* background-size: stretch; */
     background-size: contain;
     padding-left: 50px; 
-    
 }
 
 [alt="Bears Logo"] {
@@ -155,10 +151,22 @@ ul > li > ul > li > strong {
     font-weight: bold;
 }
 
+/* looks like nth-child is higher specificity than the class selector */
+
 table tr:nth-child(odd) {
     background-color: black;
 }
 
+/* looks like nth-child is higher specificity than the class selector */
+
 table tr:nth-child(odd) {
     background-color: darkgray;
+}
+
+table thead tr {
+    background-color: rgb(221, 162, 162) !important;
+}
+
+table tfoot tr {
+    background-color: rgb(134, 201, 134) !important;
 }
