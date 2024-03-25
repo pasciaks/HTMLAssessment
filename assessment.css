@@ -12,8 +12,8 @@ favorite color and set to a sans-serif font.
 } */
 
 .subjectHeader {
-    color: #FF0000;
-    font-family: sans-serif;
+    color: #420420;
+    font-family: Comic Sans MS;
     border: 1px dashed purple;
 }
 
@@ -25,24 +25,24 @@ Your table should have bold/colored table headers,
  Content should be centered in their respective blocks.
 */
 
-table {
-    border: 1px solid blue;
-    border-collapse: collapse;
+#scoreBoard {
+    border: 1px solid red;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-th {
+thead th {
     padding: 0 15px;
     border: 1px dotted gray;
+    text-decoration: underline;
     font-weight: bold;
     color: green;
     text-align: center;
     font-weight: bold;
-    border: 1px dashed red;
+    border: 1px dashed gold;
 }
 
 td {
     text-align: center;
-
     border: 1px dashed red;
 }
 
