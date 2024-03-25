@@ -10,10 +10,6 @@ img:hover {
     border: 1px solid black;
 }
 
-div :last-child {
-    background-color: lightblue;
-}
-
 /* the = operator selects the element whose attribute value is exactly equal to the specified value. */
 /* [alt="Penguin"] {
     border: 1px solid black;
@@ -119,13 +115,6 @@ li::after {
     content: "  <-- note";
     font-family: cursive;
 }
-
-/* div {
-    content: "";
-    background-image: url("http://lostwords.org/images/penguin.png");
-    opacity: .3;
-    background-size: cover;
- } */
 
 div {
     border: 2px solid black;
