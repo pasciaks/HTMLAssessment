@@ -1,0 +1,132 @@
+h1 {
+    color: red;
+}
+
+img {
+    border: 1px solid transparent;
+}
+
+img:hover {
+    border: 1px solid black;
+}
+
+div :last-child {
+    background-color: lightblue;
+}
+
+/* the = operator selects the element whose attribute value is exactly equal to the specified value. */
+/* [alt="Penguin"] {
+    border: 1px solid black;
+} */
+
+/* the = operator selects the element whose attribute value is exactly equal to the specified value. */
+/* [alt="Penguin2"]{
+    border: 1px solid red;
+} */
+
+/* the ~= operator selects the element whose attribute value is a whitespace-separated list of words, one of which is exactly equal to the specified value. */
+/* [alt~="Penguin"]{
+    border: 2px solid blue;
+} */
+
+/* the |= operator selects the element whose attribute value is exactly equal to the specified value or starts with the specified value followed by a hyphen (-). */
+/* [alt|="Penguin"]{
+    border: 2px solid blue;
+} */
+
+/* the ^= operator selects the element whose attribute value starts with the specified value. */
+/* [alt^="Penguin"]{
+    border: 2px solid blue;
+} */
+
+/* the $= operator selects the element whose attribute value ends with the specified value. */
+/* [alt$="Penguin"]{
+    border: 2px solid blue;
+} */
+
+/* the *= operator selects the element whose attribute value contains the specified value. */
+/* [alt*="enguin"]{
+    border: 2px solid blue;
+} */
+
+/* Pseudo-classes, Pseudo-elements, and Combinators */
+
+/* Path: myStyles.css */
+/* Pseudo-classes */
+/* :active */
+/* :checked */
+/* :default */
+/* :dir() */
+/* :disabled */
+/* :empty */
+/* :enabled */
+/* :first */
+/* :first-child */
+/* :first-of-type */
+/* :fullscreen */
+/* :focus */
+/* :hover */
+/* :indeterminate */
+/* :in-range */
+/* :invalid */
+/* :lang() */
+/* :last-child */
+/* :last-of-type */
+/* :left */
+/* :link */
+/* :not() */
+/* :nth-child() */
+/* :nth-last-child() */
+/* :nth-last-of-type() */
+/* :nth-of-type() */
+/* :only-child */
+/* :only-of-type */
+/* :optional */
+/* :out-of-range */
+/* :read-only */
+/* :read-write */
+/* :required */
+/* :right */
+/* :root */
+/* :scope */
+/* :target */
+/* :valid */
+/* :visited */
+
+/* pseudo elements */
+/* ::after */
+/* ::before */
+/* ::first-letter */
+/* ::first-line */
+/* ::selection */
+
+article p::first-letter {
+    font-size: 200%;
+    color: red;
+}
+
+
+section p::first-line {
+    font-size: 200%;
+    color: red;
+}
+
+li::marker {
+    color: red;
+}
+
+li::after {
+    content: "  <-- note";
+    font-family: cursive;
+}
+
+/* div {
+    content: "";
+    background-image: url("http://lostwords.org/images/penguin.png");
+    opacity: .3;
+    background-size: cover;
+ } */
+
+div {
+    border: 2px solid black;
+}
