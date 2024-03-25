@@ -95,30 +95,49 @@ Remove the image from above the team's list.
 */
 
 
-#teamRoster > li:first-child  {
+/* #teamRoster > li:first-child  {
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg');
     background-repeat: no-repeat;
     background-position: left center;
-    /* background-size: stretch; */
     background-size: contain;
     padding-left: 50px; 
-}
+} */
 
-#teamRoster > li:last-child  {
+/* #teamRoster > li:last-child  {
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg');
     background-repeat: no-repeat;
     background-position: left center;
-    /* background-size: stretch; */
     background-size: contain;
     padding-left: 50px; 
-}
+} */
 
-[alt="Bears Logo"] {
+/* [alt="Bears Logo"] {
     display: none;
-}
+} */
 
-[alt="Broncos Logo"] {
+/* [alt="Broncos Logo"] {
     display: none;
+} */
+
+#teamRoster > li{
+    position: relative;
+    color: rgb(32, 76, 126);
+
+    
+
+    ol li:first-child{
+        font-weight: bold;
+    }
+
+    img{
+        position: absolute;
+        z-index: -1;
+        bottom: 3%;
+        opacity: 15%;
+        height: 80%;
+        left: 0;
+
+    }
 }
 
 /*
